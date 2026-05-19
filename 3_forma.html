@@ -1,0 +1,211 @@
+<!-- web lapas standarts, kādu versiju lai pārlūks izmanto, šis ir HTML5 -->
+<!DOCTYPE html>
+<!-- izmantotā valoda -->
+<html lang="lv">
+<!-- web lapas galvene, norāda uz simbolu kodējumu UTF-8 atbalsta arī latviešu burtus, parāda vēl lapas virstrakstu  -->
+<head>
+    <meta charset="UTF-8">
+    <title>2. forma</title>
+</head>
+
+<!-- sākas galvenā lapas daļa, kur būs aprakstīts web lapas/formas izskats -->
+    <body>
+        <!-- Sadala formu divās daļās -->
+        <!-- ar div izveido virtuālu kasti, šī pirmā kopējā ir elastīga un aizņem visu ekrānu -->
+        <div style="display: flex; height: 100vh; border: 2px solid grey;">
+
+            <!-- Virtuālā kaste kas aizņem labo malu 2/3 -->
+            <div style="width: 67%; padding: 20px; border: 2px grey; text-align: left;">
+                <!-- Saite atpakaļ uz sākumu -->
+                <h3>
+                    <a href="index.html" style="color: black; text-decoration: none;">
+                    <span style="font-size: 22px;">&larr;</span>
+                    Atpakaļ uz sākumu
+                    </a> 
+                </h3>
+                <br>
+                <!-- Virsraksts -->
+                <h1 style="color: blue;">Publiskā datubāze</h1>
+
+                <!-- Apakšteksts -->
+                    <p style="
+                        font-size: 14px;
+                        display: inline-block;
+                        border-bottom: 2px solid #007BFF;
+                        padding-bottom: 3px;
+                        ">
+                        Šajā datubāzē Tu vari apskatīt pieejamās vielas un aprīkojumu
+                    </p>
+
+                <br>
+                <br>    
+                
+                <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+
+                    <!-- Meklēšanas lauks ar lupu -->
+                    <div style="position: relative;">
+
+                        <span style="
+                            position: absolute;
+                            left: 10px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            font-size: 16px;
+                            color: grey;
+                        ">🔍</span>
+
+                        <input type="text" placeholder="Search" style="
+                            padding: 8px 12px 8px 30px;
+                            border-radius: 20px;
+                            border: 1px solid #ccc;
+                            width: 200px;
+                            outline: none;
+                        ">
+
+                    </div>
+
+                    <!-- 1. poga -->
+                    <button style="
+                        background-color: #007BFF;
+                        color: white;
+                        border: none;
+                        padding: 10px 15px;
+                        border-radius: 20px;
+                        cursor: pointer;
+                    ">
+                        Rādīt visu
+                    </button>
+
+                    <!-- 2. poga -->
+                    <button style="
+                        background-color: white;
+                        color: #007BFF;
+                        border: 2px solid #007BFF;
+                        padding: 10px 15px;
+                        border-radius: 20px;
+                        cursor: pointer;
+                    ">
+                        Rādīt visas
+                    </button>
+
+                    <!-- 3. poga -->
+                    <button style="
+                        background-color: white;
+                        color: #007BFF;
+                        border: 2px solid #007BFF;
+                        padding: 10px 15px;
+                        border-radius: 20px;
+                        cursor: pointer;
+                    ">
+                        Rādīt aprīkojumu
+                    </button>
+
+                </div>
+
+                <!-- Tabula -->               
+
+                <table style="
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-top: 20px;
+                    font-family: Arial;
+                ">
+
+                <!-- Kolonu virsraksti -->
+                <tr style="background-color: #0b3d91; color: white;">
+                    <th style="padding: 10px; border: 1px solid #ccc;">ID</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Nosaukums</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Tips</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Apakštips</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Skaits</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Svars</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Komentāri</th>
+                </tr>
+
+                <!-- 1. rinda -->
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">KL1042724</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Katalizātors</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Aprīkojums</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Trauks</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">23</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;"></td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Daži komentāri</td>
+                </tr>
+
+                <!-- 2. rinda -->
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">KL1042723</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Birete</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Aprīkojums</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Trauks</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">20</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;"></td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Daži komentāri</td>
+                </tr>
+
+                <!-- 3. rinda -->
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">KL1042742</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">HCl</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Viela</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Skābe</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">19</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">40</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Daži komentāri</td>
+                </tr>
+
+                <!-- 4. rinda -->
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">KL1042724</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Kolba</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Aprīkojums</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Trauks</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">20</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;"></td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Daži komentāri</td>
+                </tr>
+
+                <!-- 5. rinda -->
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">10KL42534</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Fe</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Viela</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Metāls</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">48</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">10</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Daži komentāri</td>
+                </tr>
+
+                <!-- 6. rinda -->
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">KL1442721</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Na</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Viela</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Metāls</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">20</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">20</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Daži komentāri</td>
+                </tr>
+
+</table>
+                <br>
+
+                <button style="
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                    background-color: #ff6b6b;
+                    color: white;
+                    border: none;
+                    padding: 10px 15px;
+                    cursor: pointer;
+                    ">
+                    Ziņot par kļūdu
+                </button>
+
+            </div>
+
+        </div>
+    </body>
+</html>

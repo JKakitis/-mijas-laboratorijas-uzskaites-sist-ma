@@ -1,0 +1,102 @@
+<!-- web lapas standarts, kādu versiju lai pārlūks izmanto, šis ir HTML5 -->
+<!DOCTYPE html>
+<!-- izmantotā valoda -->
+<html lang="lv">
+<!-- web lapas galvene, norāda uz simbolu kodējumu UTF-8 atbalsta arī latviešu burtus, parāda vēl lapas virstrakstu  -->
+<head>
+    <meta charset="UTF-8">
+    <title>2. forma</title>
+</head>
+
+<!-- sākas galvenā lapas daļa, kur būs aprakstīts web lapas/formas izskats -->
+    <body>
+        <!-- Sadala formu divās daļās -->
+        <!-- ar div izveido virtuālu kasti, šī pirmā kopējā ir elastīga un aizņem visu ekrānu -->
+        <div style="display: flex; height: 100vh; border: 2px solid grey;">
+
+            <!-- Vēl viena kaste, kreisā malā, kas aizņem 1/3 -->
+            <div style="
+                width: 33%; 
+                padding: 20px; 
+                text-align: center; 
+                background-color: #3d57ec;
+                ">
+                <!-- Galvenais sveiciens -->
+                <h1 style="color: white">Esi sveicināts J. Kaķīti</h1>
+
+                <!-- Horizontāla līnija -->
+                <hr>
+
+                <!-- Apakšvirsraksts -->
+                <h3 style="color: white">Tavas laboratorijas uzskaites sistēma</h3>
+
+                <br>
+
+                <!-- Attēls  -->
+                <img src="science-lab-chemicals.jpg" alt="Laboratorija"  style="width: 250px; height: auto;">
+            </div>
+
+            <!-- Virtuālā kaste kas aizņem labo malu 2/3 -->
+            <div style="width: 67%; padding: 20px; border: 2px grey; text-align: left;">
+                <!-- Saite atpakaļ uz sākumu -->
+                <h3>
+                    <a href="index.html" style="color: black; text-decoration: none;">
+                    <span style="font-size: 22px;">&larr;</span>
+                    Atpakaļ uz sākumu
+                    </a> 
+                </h3>
+                <br>
+                <!-- Virsraksts -->
+                <h1 style="color: blue;">Pieslēgties</h1>
+
+                <!-- Apakšteksts -->
+                <p style="font-size: 14px;">
+                    Ķīmijas laboratorijas uzskaites sistēma
+                </p>
+
+                <br>
+
+                <!-- Ievades lauks lietotājvārdam -->
+                <label style="font-size: 12px;">Lietotājvārds</label><br>
+                <input type="text" placeholder="Ievadi lietotājvārdu"><br><br>
+
+                <!-- Ievades lauks parolei -->
+                <label style="font-size: 12px;">Parole</label><br>
+                <input type="password" placeholder="Ievadi paroli"><br><br>
+
+                <!-- Pogas -->
+                <button style="
+                    background-color: #007BFF;
+                    color: white;
+                    border: 2px solid #007BFF;
+                    padding: 10px 15px;
+                    cursor: pointer;
+                    ">
+                    Pieslēgties
+                </button>
+        
+                <!-- Horizontāla līnija -->
+                    <hr>
+
+                    <p style="font-size: 14px;">
+                    Neesi vēl reģistrēts? <a href="index.html" style="color: blue; text-decoration: none;">Izveidot profilu </a>
+                    </p>
+
+                <button style="
+                    position: absolute;
+                    bottom: 20px;
+                    right: 20px;
+                    background-color: #ff6b6b;
+                    color: white;
+                    border: none;
+                    padding: 10px 15px;
+                    cursor: pointer;
+                    ">
+                    Ziņot par kļūdu
+                </button>
+
+            </div>
+
+        </div>
+    </body>
+</html>
